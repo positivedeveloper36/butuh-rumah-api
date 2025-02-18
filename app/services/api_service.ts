@@ -10,4 +10,8 @@ export default class ApiService {
     const { data } = await ApiService.client.get('/users')
     return data
   }
+  public static async login(params: any) {
+    const { data } = await ApiService.client.post('/login', params)
+    return data
+  }
 }
