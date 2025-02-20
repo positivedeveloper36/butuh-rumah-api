@@ -9,4 +9,8 @@ export default class ApisController {
     const payload = request.all()
     return ApiService.login(payload)
   }
+  public async register({ request }: HttpContext) {
+    const payload = request.all()
+    return await ApiService.register(payload)
+  }
 }

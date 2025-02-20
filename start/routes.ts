@@ -17,6 +17,7 @@ router.get('/', async () => {
 
 router.get('apis', '#controllers/apis_controller.index')
 router.post('login', '#controllers/apis_controller.login')
+router.post('register', '#controllers/apis_controller.register')
 
 router
   .group(() => {
